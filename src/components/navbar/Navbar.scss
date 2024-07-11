@@ -1,0 +1,93 @@
+@import "../../responsive.scss";
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+  background-color: white;
+
+  a {
+    text-decoration: none;
+    color: inherit;
+    transition: all 0.4 ease;
+
+    @include sm {
+      display: none;
+    }
+    &:hover {
+      scale: 1.05;
+    }
+  }
+
+  .left {
+    flex: 3;
+    display: flex;
+    align-items: center;
+    gap: 60px;
+
+    .logo {
+      font-weight: bold;
+      font-size: 20px;
+      display: flex;
+      gap: 10px;
+      padding-left: 20px;
+
+      span {
+        @include md {
+          display: none;
+        }
+        @include sm {
+          display: initial;
+        }
+      }
+    }
+  }
+  .right {
+    flex: 2;
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    justify-content: flex-end;
+    padding-right: 20px;
+
+    .user {
+      display: flex;
+      align-items: center;
+      font-weight: bold;
+
+      img {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin-right: 20px;
+      }
+      .name {
+        margin-right: 15px;
+      }
+
+      .profile {
+        padding: 12px 24px;
+        background-color: #fece51;
+        cursor: pointer;
+        border: none;
+        border-radius: 10px;
+        position: relative;
+
+        .notification {
+          position: absolute;
+          width: 26px;
+          height: 26px;
+          background-color: red;
+          border-radius: 50%;
+          color: white;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          top: -8px;
+          right: -8px;
+        }
+      }
+    }
+  }
+}

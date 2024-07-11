@@ -1,0 +1,27 @@
+.listpage {
+  display: flex;
+  height: 100%;
+
+  .listcontainer {
+    flex: 3;
+    height: 100%;
+
+    .wrapper {
+      padding-right: 50px;
+      display: flex;
+      flex-direction: column;
+      gap: 50px;
+      overflow-y: scroll;
+      padding-bottom: 40px;
+
+      .card:last-child {
+        margin-bottom: 50px; // Additional margin for the last card
+      }
+    }
+  }
+  .mapcontainer {
+    flex: 2;
+    height: 100%;
+    // background-color: #fcf5f3;
+  }
+}

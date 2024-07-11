@@ -1,0 +1,79 @@
+.searchbar {
+  background-color: white;
+  width: 500px;
+  height: 300px;
+  border-radius: 15px;
+  margin-left: 50px;
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  h2 {
+    background-color: whitesmoke;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 30px;
+    border-radius: 15px;
+  }
+
+  .type {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+
+    button {
+      padding: 16px 36px;
+      border: 1px solid #999;
+      border-radius: 10px; /* Adding rounded edges to buttons */
+      cursor: pointer;
+
+      &.active {
+        background-color: black;
+        color: white;
+      }
+    }
+  }
+
+  form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 20px;
+    height: 64px;
+    gap: 5px;
+
+    input {
+      margin: 10px 0;
+      padding: 10px;
+      border: 1px solid lightgray;
+      border-radius: 5px; /* Adding rounded edges to input fields */
+      width: 80%;
+    }
+
+    button {
+      border: none;
+      cursor: pointer;
+      background-color: #fece51;
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 6px;
+      border-radius: 5px;
+      /* Remove default padding to center the image */
+
+      img {
+        width: 26px;
+        height: 26px;
+      }
+
+      &:hover {
+        background-color: #e0b341; /* Darker shade for hover effect */
+      }
+    }
+  }
+}

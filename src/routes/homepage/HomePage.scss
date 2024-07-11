@@ -1,0 +1,36 @@
+@import "../../responsive.scss";
+
+.homepage {
+  background-color: #122b49;
+  color: white; /* Add this line */
+  display: flex;
+  height: 150%;
+
+  .textcontainer {
+    flex: 3;
+    .wrapper {
+      padding-left: 40px;
+      height: 100%;
+
+      .title {
+        font-size: 32px;
+      }
+    }
+  }
+  .imagecontainer {
+    flex: 2;
+    position: relative;
+    display: flex;
+    align-items: center;
+
+    @include md {
+      display: none;
+    }
+
+    img {
+      width: 115%;
+      position: absolute;
+      right: 0;
+    }
+  }
+}
